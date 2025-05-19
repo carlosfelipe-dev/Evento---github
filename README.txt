@@ -2,6 +2,14 @@
 
 Este projeto automatiza o envio de senhas e códigos para participantes do evento via Google Forms, Google Sheets e e-mail.
 
+## Ferramentas
+Python 3.10+
+Google Sheets API
+Google Calendar API (Ainda em desenvolvimento)
+smtplib e email.message (para envio de e-mails)
+pandas (tratamento de dados)
+random / string (geração de senhas)
+
 ## Funcionalidades
 
 -Geração automática de senhas únicas
@@ -70,4 +78,4 @@ Exemplo:
 
 ## Contribuindo
 
-Sinta-se livre para abrir issues, sugestões e pull requests.
+Sinta-se livre para abrir issues, sugestões e pull requests. Me ajudar a implementar funcionalidade do Google Calendar.
