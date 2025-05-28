@@ -9,7 +9,7 @@ from google.oauth2 import service_account
 from googleapiclient.discovery import build
 
 # Autenticação com Google Sheets
-scope = ["https://spreadsheets.google.com/feeds", "https://www.googleapis.com/auth/drive", "https://www.googleapis.com/auth/calendar"]
+scope = ["Link da sua planilha pessoal", "https://www.googleapis.com/auth/drive", "https://www.googleapis.com/auth/calendar"]
 creds = ServiceAccountCredentials.from_json_keyfile_name("sao-joao-ejc-ecfcb1bf9054.json", scope)
 cliente = gspread.authorize(creds)
 planilha = cliente.open("Confirmacao Presenca").sheet1
@@ -30,7 +30,7 @@ dados = planilha.get_all_records(expected_headers=[
 
 # Configuração do e-mail
 email_remetente = "ejceventosinscricoes@gmail.com"
-senha_app = senha  # Cuidado: senha exposta aqui é insegura
+senha_app = senha  #Criei um arquivo senha.py para armazenar a senha pessoal
 
 servidor = smtplib.SMTP("smtp.gmail.com", 587)
 servidor.starttls()
